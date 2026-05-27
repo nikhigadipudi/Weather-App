@@ -1,0 +1,138 @@
+.hourly-forecast {
+  margin-bottom: 30px;
+}
+
+.hourly-title {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0 0 20px 0;
+}
+
+.hourly-container {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+  padding: 10px 5px;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.3) transparent;
+}
+
+.hourly-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.hourly-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 3px;
+}
+
+.hourly-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+}
+
+.hourly-item {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 80px;
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  flex-shrink: 0;
+}
+
+.hourly-item:hover {
+  background: rgba(255, 255, 255, 0.15);
+  transform: translateY(-3px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.hourly-time {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0;
+}
+
+.hourly-icon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+
+.hourly-temp {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.hourly-desc {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 11px;
+  margin: 0;
+  text-transform: capitalize;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .hourly-title {
+    font-size: 18px;
+  }
+
+  .hourly-item {
+    padding: 12px;
+    min-width: 70px;
+  }
+
+  .hourly-time {
+    font-size: 12px;
+  }
+
+  .hourly-icon {
+    width: 35px;
+    height: 35px;
+  }
+
+  .hourly-temp {
+    font-size: 16px;
+  }
+
+  .hourly-desc {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hourly-title {
+    font-size: 16px;
+  }
+
+  .hourly-item {
+    padding: 10px;
+    min-width: 60px;
+  }
+
+  .hourly-time {
+    font-size: 11px;
+  }
+
+  .hourly-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .hourly-temp {
+    font-size: 14px;
+  }
+
+  .hourly-desc {
+    font-size: 9px;
+  }
+}

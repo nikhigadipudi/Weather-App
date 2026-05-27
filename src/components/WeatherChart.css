@@ -1,0 +1,35 @@
+.weather-chart {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 16px;
+  padding: 20px;
+  margin-bottom: 20px;
+  backdrop-filter: blur(10px);
+}
+
+.chart-title {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 15px 0;
+}
+
+@media (max-width: 768px) {
+  .weather-chart {
+    padding: 15px;
+  }
+
+  .chart-title {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .weather-chart {
+    padding: 12px;
+  }
+
+  .chart-title {
+    font-size: 14px;
+  }
+}
